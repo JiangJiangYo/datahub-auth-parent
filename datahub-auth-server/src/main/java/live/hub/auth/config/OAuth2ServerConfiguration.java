@@ -144,7 +144,7 @@ public class OAuth2ServerConfiguration extends AuthorizationServerConfigurerAdap
         // 生成的 jks 文件 和 密码
         KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("jwt.jks"), "123456".toCharArray());
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-        converter.setKeyPair(keyStoreKeyFactory.getKeyPair("datahub-auth-jwt")); // 生成时候的别名
+        converter.setKeyPair(keyStoreKeyFactory.getKeyPair("oath2-jwt")); // 生成时候的别名
         return converter;
     }
 

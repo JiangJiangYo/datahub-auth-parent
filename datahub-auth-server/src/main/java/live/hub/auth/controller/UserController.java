@@ -1,5 +1,7 @@
 package live.hub.auth.controller;
 
+import org.mockito.internal.configuration.ClassPathLoader;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
