@@ -1,0 +1,10 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: datahub-auth
+  datasource:
+    url: jdbc:mysql://sunwarm.tpddns.cn:3300/datahub_auth?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowMultiQueries=true
+    username: root
+    password: yt960829
+    driver-class-name: com.mysql.cj.jdbc.Driver 

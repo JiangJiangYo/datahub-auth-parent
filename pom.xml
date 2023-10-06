@@ -3,14 +3,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>live.hub</groupId>
+    <groupId>live.datahub</groupId>
     <artifactId>datahub-auth-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>datahub-auth-api</module>
-        <module>datahub-auth-dto</module>
         <module>datahub-auth-server</module>
     </modules>
 
@@ -18,20 +16,15 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-
         <mysql.version>8.0.28</mysql.version>
-
         <hutool.version>5.8.22</hutool.version>
         <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <dependencyManagement>
-
         <dependencies>
-
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-parent</artifactId>
@@ -64,7 +57,5 @@
                 <version>${lombok.version}</version>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
-
 </project>
